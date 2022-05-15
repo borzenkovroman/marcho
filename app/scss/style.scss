@@ -3,4 +3,57 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__link {
+    text-transform: uppercase;
+    color: $title;
+    padding-bottom: 1px;
+    @extend %quicksand-400;
+    &:hover {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+      @extend %quicksand-500;
+    }
+  }
+  &__link--active {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+    @extend %quicksand-500;
+  }
+  .user {
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 25px;
+    }
+    &__link {
+      position: relative;
+      text-align: center;
+    }
+    &__num {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $accent;
+      color: #fff;
+      top: -9px;
+      right: -14px;
+      font-size: 12px;
+    }
+  }
+}
+
 @import 'media';
