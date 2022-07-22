@@ -145,6 +145,7 @@
 
   &__form-btn {
     @extend %btn;
+    border: none;
   }
 }
 
@@ -569,6 +570,7 @@
     flex-direction: column;
     justify-content: center;
     line-height: 1;
+    box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
 
     span {
       font-size: 48px;
@@ -608,6 +610,128 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.blog {
+  padding: 50px 0 160px;
+  background-image: url('../images/blog-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -25px;
+      top: -30px;
+      width: 126px;
+      height: 53px;
+      background-image: url('../images/decor/blog-decor.png');
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    max-width: 370px;
+    border: 1px solid #ececec;
+    transition: all .5s;
+    
+    &:hover {
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+      border: none;
+
+      .blog__item-link {
+        color: $accent;
+      }
+
+      .blog__item-arrow {
+        transition: all .5s;
+        fill: $accent;
+      }
+    }
+
+    &-imglink {
+      display: block;
+
+      img {
+        height: 288px;
+        object-fit: cover;
+      }
+    }
+
+    &-box {
+      padding: 30px 40px;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    &-author,
+    &-data {
+      position: relative;
+      padding-left: 30px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &-author {
+
+      &::before {
+        background-image: url('../images/icons/user-grey.png');
+      }
+    }
+
+    &-data {
+
+      &::before {
+        background-image: url('../images/icons/time.png');
+      }
+    }
+
+    &-title {
+      color: $title;
+      @extend %roboto-400;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    &-link {
+      position: relative;
+    }
+
+    &-arrow {
+      fill: rgb(141, 141, 141);
+      position: absolute;
+      right: -15px;
+      top: 60%;
+      transform: translateY(-60%);
+
+      &:hover {
+        fill: $accent;
+      }
+    }
+  }
+
 }
 
 @import 'media';
