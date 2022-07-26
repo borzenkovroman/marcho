@@ -165,6 +165,19 @@
   }
 }
 
+.top {
+
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider {
   background-image: url('../images/decor/slider-bg.png');
   background-repeat: no-repeat;
@@ -361,8 +374,6 @@
     color: $title;
     @extend %roboto-400; 
   }
-
-
 }
 
 .video-fashion {
@@ -580,10 +591,6 @@
     }
   }
 
-  &__text {
-
-  }
-
   &__subtitle {
     color: $accent;
     text-transform: uppercase;
@@ -732,6 +739,66 @@
     }
   }
 
+}
+
+.modal {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 100px 0 115px;
+
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    color: #909090;
+    font-size: 22px;
+    @extend %roboto-400; 
+    text-transform: uppercase;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    background-color: $bg;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: $title;
+    text-transform: uppercase;
+    color: $white;
+    @extend %roboto-400;
+    padding: 14px 0;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  &__error {
+    color: $accent;
+  }
 }
 
 @import 'media';
