@@ -112,3 +112,64 @@ a {
 .header--page-404 {
   background-color: $bg;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  
+  &__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  &__link {
+
+    &--active {
+      color: $accent;
+    }
+  }
+  
+  &__arrows {
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+    }
+  }
+
+  &__prev {
+    padding-left: 15px;
+    
+    &::before {
+      background-image: url(../images/icons/angle_left.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 0;
+    }
+  }
+
+  &__next {
+    padding-right: 15px;
+
+    &::before {
+      background-image: url(../images/icons/angle_right.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 0;
+    }
+  }
+}
