@@ -47,3 +47,49 @@
     @extend %btn;
   }
 }
+
+@media (max-width: 1200px) {
+  .video-fashion {
+
+    &__inner {
+      display: block;
+    }
+
+    &__popup {
+      min-width: 100%;
+      background-position: center top;
+    }
+
+    &__content {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .video-fashion {
+    padding: 70px 0;
+
+    &__popup {
+      height: 300px;
+    }
+
+    &__subtitle {
+      padding-top: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .video-fashion {
+
+    &__popup {
+      height: 200px;
+    }
+  }
+}

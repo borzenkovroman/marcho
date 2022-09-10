@@ -80,3 +80,44 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .top-slider {
+
+    &__content {
+      padding: 0 0 120px 15px;
+    }
+
+    .slick-slide img {
+      display: none;
+    }
+
+    .slick-dots {
+      margin-top: -60px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .top-slider {
+    padding: 45px 0 30px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 52px;
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+}
