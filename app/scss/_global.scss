@@ -63,6 +63,8 @@ a {
   justify-content: center;
   padding-left: 25px;
   position: relative;
+  flex-wrap: wrap;
+
   &::before {
     content: '';
     position: absolute;
