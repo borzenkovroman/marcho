@@ -1,0 +1,43 @@
+.partners {
+  padding-top: 75px;
+
+  &__list {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding: 60px 0;
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+    }
+
+    &__item {
+      margin: 10px 35px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .partners {
+
+    &__item {
+      margin: 10px 20px;
+    }
+  }
+}

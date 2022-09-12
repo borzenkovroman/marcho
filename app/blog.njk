@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcho</title>
+  <link rel="stylesheet" href="css/blog.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+    
+    {% include 'app/module/_top/_top.html' %}
+
+    <section class="blog-page">
+      <div class="container">
+        <div class="blog-page__inner">
+          <div class="blog-page__content">
+            <div class="blog-page__item">
+              <a class="blog-page__item-link" href="#">
+                <img class="blog-page__img" src="images/blog/page-1.jpg" alt="blog img">
+              </a>
+
+              <div class="blog-page__item-box">
+                <h4 class="blog-page__item-title">
+                  <a class="blog-page__item-link" href="#">
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h4>
+
+                <div class="blog-box">
+                  <a class="blog-box__author" href="#">
+                    By Admin
+                  </a>
+
+                  <div class="blog-box__data">
+                    10 January, 2020
+                  </div>
+                </div>
+
+                <p class="blog-page__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                  acchmsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-page__item">
+              <a class="blog-page__item-link" href="#">
+                <img class="blog-page__img" src="images/blog/page-2.jpg" alt="blog img">
+              </a>
+
+              <div class="blog-page__item-box">
+                <h4 class="blog-page__item-title">
+                  <a class="blog-page__item-link" href="#">
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h4>
+
+                <div class="blog-box">
+                  <a class="blog-box__author" href="#">
+                    By Admin
+                  </a>
+
+                  <div class="blog-box__data">
+                    10 January, 2020
+                  </div>
+                </div>
+
+                <p class="blog-page__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                  acchmsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-page__item blog-page__item--slider">
+              <div class="blog-page__slider">
+                <img class="blog-page__img" src="images/blog/page-3.jpg" alt="blog img">
+                <img class="blog-page__img" src="images/blog/page-2.jpg" alt="blog img">
+                <img class="blog-page__img" src="images/blog/page-1.jpg" alt="blog img">
+              </div>
+
+              <div class="blog-page__item-box">
+                <h4 class="blog-page__item-title">
+                  <a class="blog-page__item-link" href="#">
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h4>
+
+                <div class="blog-box">
+                  <a class="blog-box__author" href="#">
+                    By Admin
+                  </a>
+
+                  <div class="blog-box__data">
+                    10 January, 2020
+                  </div>
+                </div>
+
+                <p class="blog-page__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                  acchmsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-page__item blog-page__item--noimage">
+              <div class="blog-page__item-box">
+                <h4 class="blog-page__item-title">
+                  <a class="blog-page__item-link" href="#">
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h4>
+
+                <div class="blog-box">
+                  <a class="blog-box__author" href="#">
+                    By Admin
+                  </a>
+
+                  <div class="blog-box__data">
+                    10 January, 2020
+                  </div>
+                </div>
+
+                <p class="blog-page__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                  acchmsan lacus vel facilisis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-page__aside">
+            <div class="filter-search filter__item">
+              <h3 class="filter__title">
+                Search
+              </h3>
+
+              <form class="filter-search__form" action="#">
+                <input class="filter-search__input" type="text" placeholder="Search your keyword....">
+                <button class="filter-search__btn" type="submit">
+                  <svg width="15px" height="15px">
+                    <path fill-rule="evenodd"
+                      d="M11.7,9.681 C11.745,8.673 12.187,7.435 12.187,6.93 C12.187,2.733 9.453,0.0 6.93,0.0 C2.733,0.0 0.0,2.733 0.0,6.93 C0.0,9.453 2.733,12.186 6.93,12.186 C7.435,12.186 8.673,11.745 9.681,11.7 L13.674,14.999 L14.999,13.673 L11.7,9.681 L11.7,9.681 ZM6.93,10.311 C3.767,10.311 1.874,8.419 1.874,6.93 C1.874,3.766 3.767,1.874 6.93,1.874 C8.419,1.874 10.312,3.766 10.312,6.93 C10.312,8.419 8.419,10.311 6.93,10.311 L6.93,10.311 Z" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="person">
+              <img class="person__img" src="images/avatar/ceo.jpg" alt="person image">
+
+              <div class="person__name">
+                Tom D. Maianay
+              </div>
+
+              <div class="person__position">
+                CEO & Founder
+              </div>
+
+              <p class="person__text">
+                Lorem ipsum dolor sit amet, consectetum adipiscing eit, sed do eiusmod temporary incididunt ut labore et
+                dolore magnaamo aliqua. Qus ipsum suspendisse ultrices an gravida. Risus commodo
+              </p>
+
+              <div class="person__social">
+                <a href="#" class="person__social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px"
+                    height="18px" viewBox="0 0 12 18" version="1.1">
+                    <g>
+                      <path
+                        d="M 10.46875 10.125 L 11 6.867188 L 7.664062 6.867188 L 7.664062 4.75 C 7.664062 3.859375 8.132812 2.992188 9.625 2.992188 L 11.140625 2.992188 L 11.140625 0.21875 C 11.140625 0.21875 9.765625 0 8.453125 0 C 5.703125 0 3.914062 1.5625 3.914062 4.382812 L 3.914062 6.867188 L 0.859375 6.867188 L 0.859375 10.125 L 3.914062 10.125 L 3.914062 18 L 7.664062 18 L 7.664062 10.125 Z M 10.46875 10.125 " />
+                    </g>
+                  </svg>
+                </a>
+
+                <a href="#" class="person__social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px"
+                    height="16px" viewBox="0 0 14 16" version="1.1">
+                    <g>
+                      <path
+                        d="M 3.132812 14 L 0.230469 14 L 0.230469 4.652344 L 3.132812 4.652344 Z M 1.679688 3.378906 C 0.753906 3.378906 0 2.609375 0 1.679688 C 0 0.753906 0.753906 0 1.679688 0 C 2.609375 0 3.363281 0.753906 3.363281 1.679688 C 3.363281 2.609375 2.609375 3.378906 1.679688 3.378906 Z M 13.996094 14 L 11.101562 14 L 11.101562 9.449219 C 11.101562 8.367188 11.078125 6.976562 9.589844 6.976562 C 8.082031 6.976562 7.851562 8.152344 7.851562 9.371094 L 7.851562 14 L 4.953125 14 L 4.953125 4.652344 L 7.734375 4.652344 L 7.734375 5.929688 L 7.777344 5.929688 C 8.164062 5.195312 9.109375 4.417969 10.523438 4.417969 C 13.460938 4.417969 14 6.351562 14 8.867188 L 14 14 Z M 13.996094 14 " />
+                    </g>
+                  </svg>
+                </a>
+
+                <a href="#" class="person__social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                    height="16px" viewBox="0 0 15 15" version="1.1">
+                    <g>
+                      <path
+                        d="M 15 7.671875 C 15 11.816406 12.023438 14.765625 7.621094 14.765625 C 3.40625 14.765625 0 11.519531 0 7.5 C 0 3.480469 3.40625 0.234375 7.621094 0.234375 C 9.675781 0.234375 11.402344 0.953125 12.734375 2.136719 L 10.660156 4.039062 C 7.945312 1.539062 2.898438 3.414062 2.898438 7.5 C 2.898438 10.035156 5.023438 12.085938 7.621094 12.085938 C 10.640625 12.085938 11.773438 10.027344 11.949219 8.957031 L 7.621094 8.957031 L 7.621094 6.457031 L 14.878906 6.457031 C 14.949219 6.828125 15 7.1875 15 7.671875 Z M 15 7.671875 " />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="latest-post">
+              <h3 class="latest-post__title">
+                Latest Post
+              </h3>
+
+              <div class="latest-post__item">
+                <a class="latest-post__img-link" href="#">
+                  <img class="latest-post__img" src="images/blog/aside-1.jpg" alt="latest post image">
+                </a>
+
+                <div class="latest-post__box">
+                  <a class="latest-post__box-link" href="#">
+                    <h5 class="latest-post__box-title">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </h5>
+
+                  </a>
+
+                  <div class="latest-post__date">
+                    16 Feb, 2019
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post__item">
+                <a class="latest-post__img-link" href="#">
+                  <img class="latest-post__img" src="images/blog/aside-2.jpg" alt="latest post image">
+                </a>
+
+                <div class="latest-post__box">
+                  <a class="latest-post__box-link" href="#">
+                    <h5 class="latest-post__box-title">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </h5>
+
+                  </a>
+
+                  <div class="latest-post__date">
+                    16 Feb, 2019
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post__item">
+                <a class="latest-post__img-link" href="#">
+                  <img class="latest-post__img" src="images/blog/aside-3.jpg" alt="latest post image">
+                </a>
+
+                <div class="latest-post__box">
+                  <a class="latest-post__box-link" href="#">
+                    <h5 class="latest-post__box-title">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </h5>
+
+                  </a>
+
+                  <div class="latest-post__date">
+                    16 Feb, 2019
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post__item">
+                <a class="latest-post__img-link" href="#">
+                  <img class="latest-post__img" src="images/blog/aside-4.jpg" alt="latest post image">
+                </a>
+
+                <div class="latest-post__box">
+                  <a class="latest-post__box-link" href="#">
+                    <h5 class="latest-post__box-title">
+                      Lorem ipsum dolor sit amet consectetur.
+                    </h5>
+
+                  </a>
+
+                  <div class="latest-post__date">
+                    16 Feb, 2019
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__item filter-category">
+              <h3 class="filter__title">
+                CATEGORY
+              </h3>
+
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Woman
+                    </span>
+
+                    <span>
+                      48
+                    </span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Man
+                    </span>
+
+                    <span>
+                      30
+                    </span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Sale Products
+                    </span>
+
+                    <span>
+                      92
+                    </span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Fashion
+                    </span>
+
+                    <span>
+                      121
+                    </span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Hot Dresses
+                    </span>
+
+                    <span>
+                      52
+                    </span>
+                  </div>
+                </label>
+
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Accessories
+                    </span>
+
+                    <span>
+                      88
+                    </span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter__item filter-popular">
+              <h3 class="filter__title">
+                Popular Tags
+              </h3>
+
+              <form class="filter-popular__form" action="#">
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    Sweetshirt
+                  </span>
+                </label>
+
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    Man Accessories
+                  </span>
+                </label>
+
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    Fashion
+                  </span>
+                </label>
+
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    Polo
+                  </span>
+                </label>
+
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    T-Shirt
+                  </span>
+                </label>
+
+                <label class="filter-popular__label">
+                  <input class="filter-popular__input" type="checkbox">
+
+                  <span class="filter-popular__checkbox">
+                    Jewellery
+                  </span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
